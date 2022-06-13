@@ -1,0 +1,256 @@
+:root {
+    --primaryColor: #ff274b;
+    --secondarycolor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Gideon Roman", cursive;
+    color: #fff;
+}
+/* start Home */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+h5 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+p {
+    color: var(--secondarycolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+span {
+    color: var(--primaryColor);
+}
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+nav {
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 25px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    transition: 0.4s;
+}
+nav ul li a:hover {
+    color:var(--primaryColor);
+}
+
+/*  */
+
+.conten {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 4.56rem;
+    margin: 1rem;
+}
+.conten h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.conten h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondarycolor);
+}
+.conten .sochel {
+    margin-top: 3.5rem;
+    }
+.conten .sochel img {
+    margin-left: 10px;
+    width: 2.5rem;
+    transition: 0.5s;
+}
+.conten .sochel img:hover {
+    transform: scale(1.2);
+}
+.butt {
+    text-decoration: none;
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 0.81rem 1.8rem;
+    transition: 0.4s;
+}
+.butt:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* start About */
+.about {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contener-img {
+    width: 35%;
+}
+.contener-img img {
+    width: 90%;
+}
+.about .contuner-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contuner-text > div {
+    width: 48%;
+}
+/* start servess */
+.servess {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+.text-center {
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 250px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+}
+.card i {
+    font-size: 3.12rem;
+    color: var(--primaryColor);
+    margin-bottom: 2rem;
+}
+/* start Skills */
+.Skills {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Skills .contuner-text {
+    width: 35%;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch
+    
+}
+.skill i {
+    /* font-size: 50px; */
+    font-size: 3.12rem;
+    color: var(--primaryColor);
+    margin-bottom: 2rem
+}
+/* start footer */
+    footer {
+        padding: 2rem var(--padding);
+        background-color: var(--bgColor-1);
+    }
+    footer .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .container-footer p {
+        color: var(--lightColor);
+        text-align: center;
+        width: 500px;
+        margin-top: 1rem;
+    }
+    footer .container-footer .end {
+        color: var(--primaryColor);
+        margin-top: 1rem;
+    }
+/* _________________________________________ */
+
+@media screen and (max-width: 575px) {
+
+    nav {
+        padding: 1rem 0;
+    }
+    nav > h1 {
+        font-size: 1rem;
+    }
+    nav ul{
+        width: 90%;
+    }
+    nav li {
+        height: 2rem;
+    }
+    nav li a{
+        font-size: 1rem;
+    }
+    .text h1{
+        font-size: 3.5rem;
+    }  .contener-img{
+        display: none;
+    }
+    .about h1{
+        font-size: 3.5rem;
+    }
+    .contuner-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contuner-text > div{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .contuner-Skills h1{
+        font-size: 3.5rem;
+    }
+    .servess > h1 {
+    font-size: 2.5rem;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    footer .container-footer p {
+    width: 80%;
+    }
+}
